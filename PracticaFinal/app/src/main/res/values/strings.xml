@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PracticaFinal</string>
+    <string name="tv_edad">
+        Edad: %d años.
+    </string>
+</resources>

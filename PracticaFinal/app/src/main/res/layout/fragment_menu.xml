@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_yellow"
+    tools:context=".fragments.MenuFragment">
+
+    <ImageView
+        android:id="@+id/iv_bethesda"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/bethesda"
+        app:layout_constraintEnd_toStartOf="@id/iv_mojang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_mojang"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/mojang"
+        app:layout_constraintEnd_toStartOf="@id/iv_riot"
+        app:layout_constraintStart_toEndOf="@id/iv_bethesda"
+        app:layout_constraintTop_toTopOf="@id/iv_bethesda" />
+
+    <ImageView
+        android:id="@+id/iv_riot"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/riot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_mojang"
+        app:layout_constraintTop_toTopOf="@id/iv_bethesda" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
